@@ -19,10 +19,10 @@
         href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <!-- link swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Optional: Bootstrap (for spacing & layout) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
 </head>
 
@@ -225,7 +225,8 @@
                 <!-- Center Content -->
                 <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
                     <div class="animated-button-wrapper mb-3 mt-5">
-                        <button class="animated-btn">Book a Free Demo Class</button>
+                        <button class="animated-btn" id="openModalBtn">Book a Free Demo Class <span
+                                style="margin-left: 10px; font-size: larger;">↗</span></button>
                     </div>
                     <h4 class="text-offer fw-bold mb-2 mt-5">Curriculums we offer:</h4>
 
@@ -282,8 +283,7 @@
         </div>
     </section>
 
-
-    <!-- section 2 -->
+    <!-- section 3 -->
     <section>
         <div class="container">
             <div class="row pt-5 align-items-center">
@@ -302,7 +302,8 @@
                         We specialize in a wide range of subjects across all grade levels, including math, science...
                     </p>
                     <div class="animated-button-wrapper my-4">
-                        <button class="animated-btn">Read more</button>
+                        <button class="animated-btn">Read more <span
+                                style="margin-left: 10px; font-size: larger;">↗</span></button>
                     </div>
                 </div>
 
@@ -378,7 +379,8 @@
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2>Programs we offer <span class="fw-bold">for Kids</span></h2>
                 <div class="animated-button-wrapper mb-3">
-                    <button class="animated-btn">View all</button>
+                    <button class="animated-btn">View all <span
+                            style="margin-left: 10px; font-size: larger;">↗</span></button>
                 </div>
             </div>
             <div class="programs-slider d-flex overflow-auto gap-3 pb-3">
@@ -391,7 +393,8 @@
                     </div>
                     <div class="mt-2">
                         <div class="animated-button-wrapper mb-3">
-                            <button class="animated-btn">Read more</button>
+                            <button class="animated-btn">Read more <span
+                                    style="margin-left: 10px; font-size: larger;">↗</span></button>
                         </div>
                     </div>
                 </div>
@@ -405,7 +408,8 @@
                     </div>
                     <div class="mt-2">
                         <div class="animated-button-wrapper mb-3">
-                            <button class="animated-btn">Read more</button>
+                            <button class="animated-btn">Read more <span
+                                    style="margin-left: 10px; font-size: larger;">↗</span></button>
                         </div>
                     </div>
                 </div>
@@ -419,7 +423,8 @@
                     </div>
                     <div class="mt-2">
                         <div class="animated-button-wrapper mb-3">
-                            <button class="animated-btn">Read more</button>
+                            <button class="animated-btn">Read more <span
+                                    style="margin-left: 10px; font-size: larger;">↗</span></button>
                         </div>
                     </div>
                 </div>
@@ -427,15 +432,14 @@
         </div>
     </section>
 
-
-
     <!-- section 6 -->
     <section class="section-six py-5 bg-light">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2>Subjects We <span class="fw-bold">Teach</span></h2>
                 <div class="animated-button-wrapper mb-3">
-                    <button class="animated-btn">View all</button>
+                    <button class="animated-btn">View all <span
+                            style="margin-left: 10px; font-size: larger;">↗</span></button>
                 </div>
             </div>
             <div class="subjects-slider d-flex overflow-auto gap-3 pb-3">
@@ -515,17 +519,322 @@
         </div>
     </section>
 
+    <!-- section 9 -->
+    <section class="section-nine py-5" style="background-color: #f9f7f4;">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+                <h2 class="fw-semibold text-center text-md-start">
+                    Master in <span class="fw-bold">IELTS, TOEFL Exams</span>
+                </h2>
+                <div class="animated-button-wrapper mb-3">
+                    <button class="animated-btn">View all <span
+                            style="margin-left: 10px; font-size: larger;">↗</span></button>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-3 card-rotated-wrapper">
+                    <div class="card custom-card rounded-4 border-0 position-relative">
+                        <img src="./assets/img/cardimage1.jpg" class="card-img-top p-2" alt="IELTS">
+                        <div class="card-body rounded-bottom-4">
+                            <h5 class="fw-bold text-danger">IELTS Preparation</h5>
+                            <p class="mb-0">Focus on all four sections: Listening, Reading, Writing, and Speaking.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-3 card-rotated-wrapper">
+                    <div class="card custom-card rounded-4 border-0 position-relative">
+                        <img src="./assets/img/cardimage2.jpg" class="card-img-top p-2" alt="IELTS">
+                        <div class="card-body rounded-bottom-4">
+                            <h5 class="fw-bold text-danger">TOEFL Mastery</h5>
+                            <p class="mb-0">Comprehensive coverage of Reading, Listening, Speaking, and Writing
+                                sections.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-3 card-rotated-wrapper">
+                    <div class="card custom-card rounded-4 border-0 position-relative">
+                        <img src="./assets/img/cardimage3.jpg" class="card-img-top p-2" alt="IELTS">
+                        <div class="card-body rounded-bottom-4">
+                            <h5 class="fw-bold text-danger">PTE Academic Course</h5>
+                            <p class="mb-0">Time-saving strategies and practice tests with instant feedback.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-3 card-rotated-wrapper">
+                    <div class="card custom-card rounded-4 border-0 position-relative">
+                        <img src="./assets/img/cardimage4.jpg" class="card-img-top p-2" alt="IELTS">
+                        <div class="card-body rounded-bottom-4">
+                            <h5 class="fw-bold text-danger">Cambridge English (CAE)</h5>
+                            <p class="mb-0">Preparation for high-level English skills in Listening, Speaking, Reading,
+                                and Writing.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Carousel dots  -->
+            <div class="text-center mt-4">
+                <span class="dot bg-danger rounded-circle d-inline-block mx-1"
+                    style="width: 10px; height: 10px;"></span>
+                <span class="dot bg-secondary rounded-circle d-inline-block mx-1"
+                    style="width: 10px; height: 10px;"></span>
+                <span class="dot bg-secondary rounded-circle d-inline-block mx-1"
+                    style="width: 10px; height: 10px;"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 10 -->
+    <section class="section-ten py-5">
+        <h3 class="text-center mb-5 fw-semibold">Hear from our <span class="fw-bold">Valuable Parents</span></h3>
+
+        <div class="container">
+            <div class="swiper card-wrapper">
+                <div class="swiper-wrapper card-list">
+                    <div class="swiper-slide card-item">
+                        <img src="./assets/img/parentimage1.jpg" alt="Parent 1"
+                            class="testimonial-img rounded-circle mb-3" />
+                        <p class="mb-3">"Best decision for English tutoring! Educare improved our daughter’s skills and
+                            instilled confidence. Recent high scores speak volumes. Thank you, Educare!”</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="stars text-warning mb-2">★ ★ ★ ★ ★</div>
+                            <div>
+                                <h6 class="fw-bold text-danger mb-0">Sarah H</h6>
+                                <small class="text-muted">- Accountant</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card-item">
+                        <img src="./assets/img/parentimage2.png" alt="Parent 2"
+                            class="testimonial-img rounded-circle mb-3" />
+                        <p class="mb-3">"Educare’s commitment to 1-on-1 learning transformed our son’s understanding of
+                            science. Recent top scores prove Educare delivers results.”</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="stars text-warning mb-2">★ ★ ★ ★ ★</div>
+                            <div>
+                                <h6 class="fw-bold text-danger mb-0">Ahmed K</h6>
+                                <small class="text-muted">- Engineer</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card-item">
+                        <img src="./assets/img/parentimage1.jpg" alt="Parent 3"
+                            class="testimonial-img rounded-circle mb-3" />
+                        <p class="mb-3">"Excellent support! Educare truly listens to parents and students. We’ve seen a
+                            great improvement in confidence and performance.”</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="stars text-warning mb-2">★ ★ ★ ★ ★</div>
+                            <div>
+                                <h6 class="fw-bold text-danger mb-0">Anita J</h6>
+                                <small class="text-muted">- Teacher</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card-item">
+                        <img src="./assets/img/parentimage2.png" alt="Parent 1"
+                            class="testimonial-img rounded-circle mb-3" />
+                        <p class="mb-3">"Best decision for English tutoring! Educare improved our daughter’s skills and
+                            instilled confidence. Recent high scores speak volumes. Thank you, Educare!”</p>
+                        <div class="d-flex justify-content-between">
+                            <div class="stars text-warning mb-2">★ ★ ★ ★ ★</div>
+                            <div>
+                                <h6 class="fw-bold text-danger mb-0">Sarah H</h6>
+                                <small class="text-muted">- Accountant</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="pt-5">
+                    <div class="swiper-pagination ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 11 -->
+    <section class="section-11 py-5" style="background-color: #f9f7f4;">
+        <div class="container">
+            <h3 class="text-center fw-semibold mb-5">Frequently asked <span class="fw-bold">Questions</span></h3>
+
+            <div class="accordion" id="faqAccordion">
+                <!-- Item 1 -->
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne">
+                            What subjects do you offer tutoring in?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We offer tutoring in a wide range of subjects including Math, Science, English, Reading,
+                            History, and many more.
+                            We also provide specialized test preparation for standardized tests such as the SAT, ACT,
+                            and AP exams.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo">
+                            What ages or grade levels do you tutor?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We tutor students from elementary school through high school and beyond, including college
+                            prep.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree">
+                            Is tutoring one-on-one or in groups?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We offer both one-on-one sessions and small group tutoring based on the student's
+                            preference.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour">
+                            Can sessions take place at our home?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, we offer both in-home and online tutoring sessions to fit your needs.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive">
+                            What is the duration and frequency of each tutoring session?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sessions are typically 1 hour long, and we recommend 2–3 sessions per week for optimal
+                            results.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- section 12 -->
+    <section class="section-12 py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h3 class="fw-semibold">Our Latest <span class="fw-bold">Blog Posts</span></h3>
+                <div class="animated-button-wrapper mb-3 mt-5">
+                    <button class="animated-btn">
+                        View all <span style="margin-left: 10px; font-size: larger;">↗</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="row blog-row g-4">
+                <!-- Blog Card 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="./assets/img/blogImage1.jpg" class="card-img-top rounded-top-4" alt="Home Tutoring">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Top tips for effective home tutoring</h5>
+                            <p class="card-text small text-muted">Share practical advice on how students can make the
+                                most out of tutoring sessions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="./assets/img/blogImage2.jpg" class="card-img-top rounded-top-4"
+                            alt="Study Environment">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Building a productive study environment</h5>
+                            <p class="card-text small text-muted">Share practical advice on how students can make the
+                                most out of tutoring sessions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="./assets/img/blogImage3.jpg" class="card-img-top rounded-top-4" alt="Tutor Skills">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">5 Skills every great tutor should have</h5>
+                            <p class="card-text small text-muted">Outline essential skills for tutors, such as patience,
+                                adaptability, subject knowledge.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Card 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <img src="./assets/img/blogImage4.jpg" class="card-img-top rounded-top-4"
+                            alt="Individual Tuition">
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold">Getting the best individual tuition</h5>
+                            <p class="card-text small text-muted">Share practical advice on how students can make the
+                                most out of tutoring sessions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <!-- footer -->
     <section class="footer py-5 text-white" style="background-color: #8B1E3F;">
         <div class="container">
             <div class="row gy-4">
-                <!-- Logo -->
+                <!-- logo -->
                 <div class="col-md-3 d-flex">
                     <img src="assets/img/logo.png" alt="Logo" height="40" class="me-2">
                     <h4 class="m-0 fw-bold">Educare</h4>
                 </div>
 
-                <!-- Navigation -->
+                <!-- links -->
                 <div class="col-md-2">
                     <h6 class="fw-bold mb-3">Navigation</h6>
                     <ul class="list-unstyled">
@@ -538,8 +847,22 @@
                     </ul>
                 </div>
 
-                <!-- Contact Info -->
+                <!-- address  -->
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Office Address</h6>
+                    <p class="mb-1">EducareEducation Center<br>
+                        Building 45, Al Sadd Street,<br>
+                        Doha, Qatar
+                    </p>
+                </div>
+                <!-- map -->
                 <div class="col-md-3">
+                    <img src="./assets/img/location.png" alt="map" class="img-fluid mt-1" style="max-height: 150px;">
+                    <a href="#" class="text-white text-decoration-underline">View on Map</a>
+                </div>
+
+                <!-- contact Info -->
+                <div class="col-md-2">
                     <h6 class="fw-bold mb-3">Contact info</h6>
                     <ul class="list-unstyled">
                         <li><a href="mailto:educare@gmail.com"
@@ -557,16 +880,7 @@
                     </div>
                 </div>
 
-                <!-- Map  -->
-                <div class="col-md-4">
-                    <h6 class="fw-bold mb-3">Office Address</h6>
-                    <p class="mb-1">EducareEducation Center<br>
-                        Building 45, Al Sadd Street,<br>
-                        Doha, Qatar
-                    </p>
-                    <img src="./assets/img/location.png" alt="map" class="img-fluid mt-1" style="max-height: 150px;">
-                    <a href="#" class="text-white text-decoration-underline">View on Map</a>
-                </div>
+
             </div>
 
             <hr class="border-light my-4">
@@ -585,6 +899,49 @@
     </section>
 
 
+    <!-- modal -->
+    <div id="demoModal" class="modal-overlay">
+        <div class="modal-content bg-light">
+            <span class="close-modal fw-bold" id="closeModalBtn">&times;</span>
+            <h2>Book a Free Demo Class</h2>
+            <p class="sub-text">Fill up this form and we will connect you shortly</p>
+
+            <form>
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email ID" required />
+
+                <select required>
+                    <option value="">Choose your curriculum syllabus</option>
+                    <option value="cbse">CBSE</option>
+                    <option value="icse">ICSE</option>
+                </select>
+
+                <select required>
+                    <option value="">Choose your class</option>
+                    <option value="8">Class 8</option>
+                    <option value="9">Class 9</option>
+                </select>
+
+                <select required>
+                    <option value="">Choose your course</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                </select>
+
+                <textarea placeholder="Write your Message"></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
 
