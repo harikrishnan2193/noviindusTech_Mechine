@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educare</title>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- fontawsome cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="bg-maroon text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="Logo" height="40" class="me-2">
+                <h4 class="m-0 fw-bold">Educare</h4>
+            </div>
+            <!-- Button on small screens -->
+            <button class="navbar-toggler d-lg-none text-white border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu">
+                <i class="fa-solid fa-bars fa-lg"></i>
+            </button>
+            <ul class="nav d-none d-lg-flex">
+                <li class="nav-item"><a class="nav-link text-white" href="#">About us</a></li>
+                <!-- Courses with dropdown -->
+                <li class="nav-item dropdown custom-dropdown">
+                    <a class="nav-link text-white" href="#">
+                        Courses <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">For School Students</a>
+                            <ul class="submenu dropdown-menu ms-1">
+                                <li><a class="dropdown-item" href="#">Math</a></li>
+                                <li><a class="dropdown-item" href="#">Physics</a></li>
+                                <li><a class="dropdown-item" href="#">Chemistry</a></li>
+                                <li><a class="dropdown-item" href="#">Biology</a></li>
+                                <li><a class="dropdown-item" href="#">English</a></li>
+                                <li><a class="dropdown-item" href="#">Arabic</a></li>
+                                <li><a class="dropdown-item" href="#">Computer Science</a></li>
+                                <li><a class="dropdown-item" href="#">Civics</a></li>
+                                <li><a class="dropdown-item" href="#">Geography</a></li>
+                                <li><a class="dropdown-item" href="#">Economics</a></li>
+                                <li><a class="dropdown-item" href="#">History</a></li>
+                                <li><a class="dropdown-item" href="#">Politics</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">For Kids</a>
+                            <ul class="submenu dropdown-menu ms-1">
+                                <li><a class="dropdown-item" href="#">Drawing</a></li>
+                                <li><a class="dropdown-item" href="#">Story Time</a></li>
+                                <li><a class="dropdown-item" href="#">Rhymes</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item" href="#">Other</a>
+                            <ul class="submenu dropdown-menu ms-1">
+                                <li><a class="dropdown-item" href="#">Photography</a></li>
+                                <li><a class="dropdown-item" href="#">Coding</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link text-white" href="#">Careers</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">News & Blog</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#">Payments</a></li>
+            </ul>
+            <div class="d-none d-lg-flex align-items-center">
+                <div>
+                    <span class="me-3"><i class="fa-solid fa-phone"></i> +974 55555 3456</span> <br>
+                    <span class="me-3"><i class="fa-solid fa-envelope"></i> info@educare.qa</span>
+                </div>
+                <a href="#" class="btn btn-light btn-sm text-danger fw-semibold px-3 ms-3">Contact Us</a>
+            </div>
+        </div>
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end bg-maroon text-white" tabindex="-1" id="mobileMenu">
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column justify-content-between">
+
+                <!-- Nav contents -->
+                <ul class="nav flex-column mb-4">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About Us</a>
+                    </li>
+
+                    <!-- Courses Dropdown -->
+                    <li class="nav-item dropdown custom-dropdown">
+                        <a class="nav-link text-white " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Courses <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu border-0">
+                            <!-- School Students -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item">For School Students</a>
+                                <ul class="submenu dropdown-menu ms-2">
+                                    <li><a class="dropdown-item">Math</a></li>
+                                    <li><a class="dropdown-item">Physics</a></li>
+                                    <li><a class="dropdown-item">Chemistry</a></li>
+                                    <li><a class="dropdown-item">Biology</a></li>
+                                    <li><a class="dropdown-item">English</a></li>
+                                    <li><a class="dropdown-item">Arabic</a></li>
+                                    <li><a class="dropdown-item">Computer Science</a></li>
+                                    <li><a class="dropdown-item">Civics</a></li>
+                                    <li><a class="dropdown-item">Geography</a></li>
+                                    <li><a class="dropdown-item">Economics</a></li>
+                                    <li><a class="dropdown-item">History</a></li>
+                                    <li><a class="dropdown-item">Politics</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Kids -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" href="#">For Kids</a>
+                                <ul class="submenu dropdown-menu ms-2">
+                                    <li><a class="dropdown-item" href="#">Drawing</a></li>
+                                    <li><a class="dropdown-item" href="#">Story Time</a></li>
+                                    <li><a class="dropdown-item" href="#">Rhymes</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Other -->
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item" href="#">Other</a>
+                                <ul class="submenu dropdown-menu  ms-2">
+                                    <li><a class="dropdown-item" href="#">Photography</a></li>
+                                    <li><a class="dropdown-item" href="#">Coding</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">News & Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Payments</a>
+                    </li>
+                </ul>
+                <!-- Contact Info -->
+                <div class="border-top pt-3">
+                    <p class="mb-1">
+                        <i class="fa-solid fa-phone me-2"></i> +974 55555 3456
+                    </p>
+                    <p class="mb-3">
+                        <i class="fa-solid fa-envelope me-2"></i> info@educare.qa
+                    </p>
+                    <a href="#" class="btn btn-light btn-sm text-danger fw-semibold px-4">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div id="carouselSlides" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active text-center">
+                        <h1 class="slide-text">
+                            <span class="line-one d-block">Personalized One-to-One</span>
+                            <span class="line-two d-block">Tutoring at Our Center</span>
+                        </h1>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h1 class="slide-text">
+                            <span class="line-one d-block">Individual Tuitions,</span>
+                            <span class="line-two d-block">For all students till 12th grade</span>
+                        </h1>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <h1 class="slide-text">
+                            <span class="line-one d-block">Master IELTS, TOEFL, and</span>
+                            <span class="line-two d-block">Beyond with Expert Guidance</span>
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Dot indicators -->
+                <div class="carousel-dots text-center mt-3">
+                    <span class="dot active-dot" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+
+            <div class="row text-center align-items-center" id="row-grafic" style="min-height: 100%;">
+                <!-- Left Graphic -->
+                <div class="col-md-4 d-flex justify-content-center align-items-center mb-4 mb-md-0">
+                    <div class="bounce-image">
+                        <img src="./assets/img/grafic_left.png" class="w-100" alt="Left Graphic">
+                    </div>
+                </div>
+
+                <!-- Center Content -->
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <div class="animated-button-wrapper mb-3 mt-5">
+                        <button class="animated-btn">Book a Free Demo Class</button>
+                    </div>
+                    <h4 class="text-offer fw-bold mb-2 mt-5">Curriculums we offer:</h4>
+
+                    <!-- Logos -->
+                    <div class="logos">
+                        <div class="carousel-inner1 d-flex justify-content-center align-items-center">
+                            <div class="item">
+                                <img src="https://img.freepik.com/free-vector/bird-colorful-logo-gradient-vector_343694-1365.jpg?ga=GA1.1.284939944.1737363374&semt=ais_hybrid&w=740"
+                                    class="logo-img" alt="Pearson Logo">
+                            </div>
+                            <div class="item">
+                                <img src="https://img.freepik.com/free-vector/indonesian-halal-logo-new-branding-2022_17005-1495.jpg?ga=GA1.1.284939944.1737363374&semt=ais_hybrid&w=740"
+                                    class="logo-img" alt="Ministry Logo">
+                            </div>
+                            <div class="item">
+                                <img src="https://img.freepik.com/free-vector/gradient-quill-pen-logo-with-tagline-template_23-2149813051.jpg?ga=GA1.1.284939944.1737363374&semt=ais_hybrid&w=740"
+                                    class="logo-img" alt="SABIS Logo">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Graphic -->
+                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="bounce-image">
+                        <img src="./assets/img/grafic_right.png" class="w-100" alt="Right Graphic">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <!-- seperation -->
+    <section class="secttion-seperation">
+        <div class="container">
+            <div class="row py-4 text-center">
+                <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0 separation-item">
+                    <i class="fa-solid fa-user"></i> Personal Attention
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0 separation-item">
+                    <i class="fa-solid fa-trophy"></i> Growth Mindset
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0 separation-item">
+                    <i class="fa-solid fa-user-graduate"></i> Skill Development
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 separation-item">
+                    <i class="fa-solid fa-heart-pulse"></i> Passionate Teaching
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section 2 -->
+    <section>
+        <div class="container">
+            <div class="row pt-5 align-items-center">
+                <!-- text content -->
+                <div class="col-lg-8 col-md-12 about-text pe-lg-5 mb-4 mb-lg-0">
+                    <h2 class="fw-semibold">The Story of <span class="fw-bold">Educare</span></h2>
+                    <p>
+                        At Educare education center, we believe that every student deserves personalized, focused
+                        attention to reach their fullest potential...
+                    </p>
+                    <p class="pt-3">
+                        Founded on a passion for education and a commitment to excellence, <span
+                            class="fw-bold">Educare</span>...
+                    </p>
+                    <p class="pt-3">
+                        We specialize in a wide range of subjects across all grade levels, including math, science...
+                    </p>
+                    <div class="animated-button-wrapper my-4">
+                        <button class="animated-btn">Read more</button>
+                    </div>
+                </div>
+
+                <!-- image content -->
+                <div class="col-lg-4 col-md-12 collage-wrapper d-flex justify-content-center align-items-center">
+                    <div class="frame image-wrapper-1">
+                        <img class="image_first" src="./assets/img/section3image1.png" alt="">
+                    </div>
+                    <div class="frame image-wrapper-2">
+                        <img class="image_secont" src="./assets/img/section3image2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-4 col-md-6 col-sm-12 card-section-two">
+                    <h4>Mission</h4>
+                    <div class="d-flex">
+                        <p>To help students succeed with personalized, <span class="fw-bold">one-to-one</span> tutoring
+                            that builds confidence, skills, and a love for learning.</p>
+                        <img src="./assets/img/section3grafic2.png" class="section-3image" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 card-section-two">
+                    <h4>Vision</h4>
+                    <div class="d-flex">
+                        <p>To be a trusted center where students reach their potential, build confidence, and prepare
+                            for a <span class="fw-bold">bright future</span>.</p>
+                        <img src="./assets/img/section3grafic1.png" class="section-3image" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section 4 -->
+    <section class="section-four">
+        <div class="container">
+            <div class="row section-four-row py-5 align-items-center">
+
+                <!-- text column -->
+                <div class="col-lg-5 col-md-12 mb-4 mb-lg-0">
+                    <h2>Our way of <span class="fw-bold">Teaching</span></h2>
+                    <ul class="ps-3">
+                        <li class="pt-4">
+                            Every teacher at <span class="fw-bold">Educare</span> brings passion to their lessons,
+                            making learning enjoyable with engaging activities tailored to inspire and motivate each
+                            student.
+                        </li>
+                        <li class="pt-4">
+                            We focus on creating a supportive environment where individual strengths are recognized, and
+                            personalized attention helps students excel.
+                        </li>
+                        <li class="pt-4">
+                            Our approach combines innovative teaching methods with real-world applications, ensuring
+                            students not only learn but also understand and apply their knowledge effectively.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- image  -->
+                <div class="col-lg-7 col-md-12">
+                    <img src="./assets/img/section4image1.jpg" class="img-fluid section4-image" alt="no image">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section 5 -->
+    <section class="section-five py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Programs we offer <span class="fw-bold">for Kids</span></h2>
+                <div class="animated-button-wrapper mb-3">
+                    <button class="animated-btn">View all</button>
+                </div>
+            </div>
+            <div class="programs-slider d-flex overflow-auto gap-3 pb-3">
+                <div class="card program-card p-4 rounded-4 shadow-sm flex-shrink-0 text-start"
+                    style="min-width: 280px;">
+                    <h5>English Grammar</h5>
+                    <div class="d-flex">
+                        <p>Master the building blocks of writing and communication.</p>
+                        <img src="./assets/img/section5card1.png" alt="no image">
+                    </div>
+                    <div class="mt-2">
+                        <div class="animated-button-wrapper mb-3">
+                            <button class="animated-btn">Read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card program-card p-4 rounded-4 shadow-sm flex-shrink-0 text-start"
+                    style="min-width: 280px;">
+                    <h5>Craft Classes</h5>
+                    <div class="d-flex">
+                        <p>Unleash creativity with hands-on projects and artistic fun.</p>
+                        <img src="./assets/img/section5card2.png" alt="no image">
+                    </div>
+                    <div class="mt-2">
+                        <div class="animated-button-wrapper mb-3">
+                            <button class="animated-btn">Read more</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card program-card p-4 rounded-4 shadow-sm flex-shrink-0 text-start"
+                    style="min-width: 280px;">
+                    <h5>Art and Painting</h5>
+                    <div class="d-flex">
+                        <p>Express yourself through colors, sketches, and designs.</p>
+                        <img src="./assets/img/section5card3.png" alt="no image">
+                    </div>
+                    <div class="mt-2">
+                        <div class="animated-button-wrapper mb-3">
+                            <button class="animated-btn">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- section 6 -->
+    <section class="section-six py-5 bg-light">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Subjects We <span class="fw-bold">Teach</span></h2>
+                <div class="animated-button-wrapper mb-3">
+                    <button class="animated-btn">View all</button>
+                </div>
+            </div>
+            <div class="subjects-slider d-flex overflow-auto gap-3 pb-3">
+                <div class="card subject-card p-5 rounded-4 text-center flex-shrink-0"
+                    style="min-width: 180px; background-color: #8B2E3C; color: white;">
+                    <p class="mb-0">Maths</p>
+                </div>
+                <div class="card subject-card p-5 rounded-4 text-center flex-shrink-0"
+                    style="min-width: 180px; background-color: #8B2E3C; color: white;">
+                    <p class="mb-0">Physics</p>
+                </div>
+                <div class="card subject-card p-5 rounded-4 text-center flex-shrink-0"
+                    style="min-width: 180px; background-color: #8B2E3C; color: white;">
+                    <p class="mb-0">Chemistry</p>
+                </div>
+                <div class="card subject-card p-5 rounded-4 text-center flex-shrink-0"
+                    style="min-width: 180px; background-color: #8B2E3C; color: white;">
+                    <p class="mb-0">Biology</p>
+                </div>
+                <div class="card subject-card p-5 rounded-4 text-center flex-shrink-0"
+                    style="min-width: 180px; background-color: #8B2E3C; color: white;">
+                    <p class="mb-0">Computer Science</p>
+                </div>
+                <div class="card subject-card p-5 rounded-4 text-center flex-shrink-0"
+                    style="min-width: 180px; background-color: #8B2E3C; color: white;">
+                    <p class="mb-0">English</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 7 -->
+     <section class="section-seven py-5">
+        <div class="section-seven-heading">
+            <h3 class="text-center ">Prepare Your Child for a World of Opportunities with Educare</h3>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 section-seven-bg">
+                <!-- contents -->
+            </div>
+            <div class="col-2"></div>
+        </div>
+     </section>
+
+     <!-- seperation -->
+     <section class="secttion-seperation">
+        <div class="container">
+            <div class="row py-4 text-center">
+                <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0 separation-item">
+                    <i class="fa-solid fa-user"></i> Personal Attention
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0 separation-item">
+                    <i class="fa-solid fa-trophy"></i> Growth Mindset
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0 separation-item">
+                    <i class="fa-solid fa-user-graduate"></i> Skill Development
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 separation-item">
+                    <i class="fa-solid fa-heart-pulse"></i> Passionate Teaching
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- section 8 -->
+     <section class="section-eight py-5">
+        <div class="heading">
+            <h3 class="d-flex justify-content-center ">Learn More About Our Space</h3>
+        </div>
+        <div class="row my-5">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <img src="./assets/img/section8image1.jpg" alt="no image">
+            </div>
+            <div class="col-2"></div>
+        </div>
+     </section>
+
+    <!-- ======= Features Section ======= -->
+    <!-- <section class="bg-light py-4">
+        <div class="container text-center d-flex justify-content-around flex-wrap">
+            <div class="feature-box p-3">
+                <img src="assets/img/personal.png" height="40" alt="">
+                <p class="mt-2">Personal Attention</p>
+            </div>
+            <div class="feature-box p-3">
+                <img src="assets/img/growth.png" height="40" alt="">
+                <p class="mt-2">Growth Mindset</p>
+            </div>
+            <div class="feature-box p-3">
+                <img src="assets/img/skill.png" height="40" alt="">
+                <p class="mt-2">Skill Development</p>
+            </div>
+            <div class="feature-box p-3">
+                <img src="assets/img/teaching.png" height="40" alt="">
+                <p class="mt-2">Passionate Teaching</p>
+            </div>
+        </div>
+    </section> -->
+
+
+</body>
+
+</html>
