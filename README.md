@@ -20,7 +20,7 @@ This is a front-end web project developed using **HTML**, **CSS**, and **jQuery*
 
 ## 📁 Project Folder Structure
 
-<pre> ```markdown 
+<pre>
 📦 project-root
 ├── 📄 index.html            # Main HTML file (all content and layout)
 └── 📁 assets
@@ -31,7 +31,7 @@ This is a front-end web project developed using **HTML**, **CSS**, and **jQuery*
     │   └── 🖼️ [image files...]
     └── 📁 js
         └── ⚙️ script.js     # JavaScript/jQuery code for functionality
- ``` </pre>
+</pre>
 
 ## 🧑‍💻 How to Run
 
