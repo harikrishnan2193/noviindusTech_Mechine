@@ -109,7 +109,6 @@ const swiper = new Swiper('.swiper', {
     }
 })
 
-
 //model
 const modal = document.getElementById("demoModal")
 const openBtn = document.getElementById("openModalBtn")

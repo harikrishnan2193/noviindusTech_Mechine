@@ -240,13 +240,14 @@
     display: inline-block;
 }
 
-.image_first{
+.image_first {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 8px;
 }
-.image_secont{
+
+.image_secont {
     width: 100%;
     height: 330px;
     display: block;
@@ -429,17 +430,6 @@
 
 .card-item p {
     font-size: small;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-    color: #000;
-    /* Make arrows visible */
-    top: 45%;
-}
-
-.swiper-pagination {
-    margin-top: 20px;
 }
 
 
