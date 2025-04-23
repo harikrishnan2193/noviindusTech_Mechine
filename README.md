@@ -20,7 +20,18 @@ This is a front-end web project developed using **HTML**, **CSS**, and **jQuery*
 
 ## 📁 Project Folder Structure
 
-<pre> ```txt project-root/ │ ├── index.html # Main HTML file └── assets/ ├── css/ │ └── style.css # Custom styles ├── fonts/ # (Empty for now) ├── img/ # All image files └── js/ └── script.js # JavaScript code ``` </pre>
+<pre> ```markdown 
+📦 project-root
+├── 📄 index.html            # Main HTML file (all content and layout)
+└── 📁 assets
+    ├── 📁 css
+    │   └── 🎨 style.css     # Custom styles for the project
+    ├── 📁 fonts             # Fonts folder (currently empty)
+    ├── 📁 img               # All images used in the project
+    │   └── 🖼️ [image files...]
+    └── 📁 js
+        └── ⚙️ script.js     # JavaScript/jQuery code for functionality
+ ``` </pre>
 
 ## 🧑‍💻 How to Run
 
