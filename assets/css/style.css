@@ -9,7 +9,6 @@
     background-color: #800020;
 }
 
-
 /* drop down */
 .custom-dropdown:hover>.dropdown-menu {
     display: block;
@@ -289,7 +288,7 @@
 @media (max-width: 990px) {
     .card-section-two {
         margin-left: 0;
-        margin:10px;
+        margin: 10px;
         width: 100%;
     }
 
