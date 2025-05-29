@@ -44,7 +44,7 @@ This is a front-end web project developed using **HTML**, **CSS**, and **jQuery*
 - Make sure jQuery is properly linked in the HTML before the script file.
 - Customize styles and scripts according to your project needs.
 
-### 🖼️ Screenshot
+### 🖼️ Screenshot - Full Web Page
 
 ![App Screenshot](./assets/img/Screenshot.jpeg)
 
