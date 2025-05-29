@@ -46,5 +46,5 @@ This is a front-end web project developed using **HTML**, **CSS**, and **jQuery*
 
 ### 🖼️ Screenshot
 
-![App Screenshot](./assets/img/Screenshot.png)
+![App Screenshot](./assets/img/Screenshot.jpeg)
 
