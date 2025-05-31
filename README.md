@@ -48,3 +48,6 @@ This is a front-end web project developed using **HTML**, **CSS**, and **jQuery*
 
 ![App Screenshot](./assets/img/Screenshot.jpeg)
 
+### 🚀 Live Demo
+
+[Click here to try the live app](https://noviindus-tech-mechine.vercel.app/)
